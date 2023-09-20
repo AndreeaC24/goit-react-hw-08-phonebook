@@ -21,7 +21,7 @@
     "material-ui-icons": "^1.0.0-beta.36",
     "material-ui-popup-state": "^5.0.9",
     "notiflix": "^3.2.6",
-    "react": "^18.1.0",
+    "react": "^17.0.2",
     "react-apexcharts": "^1.4.1",
     "react-dom": "^18.1.0",
     "react-google-font-loader": "^1.1.0",
