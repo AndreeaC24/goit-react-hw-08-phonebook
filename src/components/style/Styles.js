@@ -276,6 +276,9 @@ export const useStyles = makeStyles(theme => ({
     left: 0,
     color: 'red',
   }, 
+  buttonNF:{
+    marginTop: theme.spacing(2),
+  },
 }));
 
 export const StyledBadge = styled(Badge)(({ theme }) => ({

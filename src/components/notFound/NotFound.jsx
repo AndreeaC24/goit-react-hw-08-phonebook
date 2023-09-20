@@ -2,8 +2,10 @@
 import React from 'react';
 import { Box, Button, Container, Typography, Link } from '@mui/material';
 import Grid from '@mui/material/Grid'; 
+import { useStyles } from 'components/style/Styles';
 
-export const NotFound = () => {
+export const NotFound = () => {  
+  const classes = useStyles();
   return (
     <Box
       sx={{
@@ -19,7 +21,7 @@ export const NotFound = () => {
             <Typography variant="h1"> 404 </Typography>
             <Typography variant="h6"> The page you're looking for doesn't exist. </Typography>
               <Link href="/">
-                <Button variant="contained"> {"Home"} </Button>
+                <Button variant="contained" className={classes.buttonNF}> {"Home"} </Button>
               </Link>
           </Grid>
           <Grid xs={6}>

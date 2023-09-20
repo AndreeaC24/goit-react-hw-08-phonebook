@@ -19,8 +19,7 @@ import { useStyles } from '../style/Styles';
 
 
 const Register = () => {
-  const classes = useStyles();
-  const [password, setPassword] = useState('');
+  const classes = useStyles(); 
   const [visible, setVisible] = useState(false);
   const dispatch = useDispatch();
   const [nameError, setNameError] = useState('');
@@ -93,32 +92,31 @@ const Register = () => {
             error={!!emailError}
           />
           <TextField
-            variant="outlined"
-            margin="normal"
-            required
-            fullWidth
-            name="password"
-            label="Password"
-            id="password"
-            type={visible ? 'text' : 'password'}
-            autoComplete="current-password"
-            onChange={e => setPassword(e.target.value)}
-            InputLabelProps={{
-              classes: {
-                root: classes.labelMargin,
-              },
-            }}
-            InputProps={{
-              endAdornment: (
-                <span className={classes.visibilityIcon} onClick={() => setVisible(!visible)}>
-                  {visible ? <VisibilityIcon /> : <VisibilityOffIcon />}
-                </span>
-              ),
-            }}
-            onBlur={e => { setPasswordError(validatePassword(e.target.value));}}
-            helperText={passwordError}
-            error={!!passwordError}
-          />
+              variant="outlined"
+              margin="normal"
+              required
+              fullWidth
+              name="password"
+              label="Password"
+              id="password"
+              type={visible ? 'text' : 'password'}
+              autoComplete="current-password"
+              InputLabelProps={{
+                classes: {
+                  root: classes.labelMargin,
+                },
+              }}
+              InputProps={{
+                endAdornment: (
+                  <span className={classes.visibilityIcon} onClick={() => setVisible(!visible)}>
+                    {visible ? <VisibilityIcon /> : <VisibilityOffIcon />}
+                  </span>
+                ),
+              }}
+              onBlur={e => { setPasswordError(validatePassword(e.target.value)); }}
+              helperText={passwordError}
+              error={!!passwordError}
+            />
           <Button
             type="submit"
             fullWidth

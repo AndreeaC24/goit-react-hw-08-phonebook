@@ -21,7 +21,9 @@ export const ContactForm = () => {
 
   const [nameError, setNameError] = useState('');
   const [phoneError, setPhoneError] = useState('');
-  const [showErrors, setShowErrors] = useState(false);  
+  const [showErrors, setShowErrors] = useState(false); // eslint-disable-line no-unused-vars
+
+
   const validateName = name => {
     if ( /^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/.test(name) && name.length > 2) {
       setNameError('');
@@ -29,7 +31,6 @@ export const ContactForm = () => {
       setNameError('Name should have at least 3 letters');
     }
   };
-
   const validatePhoneNumber = number => {
     if (/^07\d{8}$/.test(number)) {
       setPhoneError('');

@@ -19,7 +19,6 @@ import { validateEmail, validatePassword } from '../common/Validation';
 
 const Login = () => {
   const classes = useStyles();
-  const [password, setPassword] = useState('');
   const [visible, setVisible] = useState(false);
 
   const [emailError, setEmailError] = useState('');
@@ -86,7 +85,6 @@ const Login = () => {
               id="password"
               type={visible ? 'text' : 'password'}
               autoComplete="current-password"
-              onChange={e => setPassword(e.target.value)}
               InputLabelProps={{
                 classes: {
                   root: classes.labelMargin,

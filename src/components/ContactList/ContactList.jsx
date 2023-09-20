@@ -28,9 +28,10 @@ export const ContactList = () => {
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const filteredContacts = useSelector(selectFilteredContacts);
-  const secondary = deepOrange[500];
+  const secondary = deepOrange[500]; // eslint-disable-line no-unused-vars
 
-  const [close, setClose] = useState(false);  
+
+  const [close, setClose] = useState(false);   // eslint-disable-line no-unused-vars
 
   const [editName, setEditName] = useState('');
   const [editPhone, setEditPhone] = useState('');
@@ -66,7 +67,7 @@ export const ContactList = () => {
     <div>
       {isLoading && <Loader />}
       {contacts.length === 0 && !error && !isLoading ? (
-        <NotFound />
+      <span>Your agenda is currently empty</span>
       ) : (
         <Table className={classes.tabelContact}>
           <TableBody>
