@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-import { Drawer, IconButton, List, ListItem, ListItemText,} from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+import { Drawer, IconButton, List, ListItem, ListItemText,} from '@material-ui/core'; 
+import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 
 import { useStyles } from '../style/Styles';
 import { UserMenu } from '../userMenu/UserMenu';
@@ -52,7 +52,7 @@ function DrawerComponent() {
           {!isLoggedIn && alistItem}
         </List>
       </Drawer>
-      <IconButton  onClick={() => setOpenDrawer(!openDrawer)} className={classes.icon}> <MenuIcon /> </IconButton>
+      <IconButton  onClick={() => setOpenDrawer(!openDrawer)} className={classes.icon}> <MenuOutlinedIcon /> </IconButton>
     </>
   );
 }
