@@ -79,10 +79,6 @@ export const useStyles = makeStyles(theme => ({
       minHeight: '50vh',
     },
   },
-  // svgContainer: {
-  //   padding: theme.spacing(2),
-  //   textAlign: 'center',
-  // },
   formContainer: {
     padding: theme.spacing(3),
     textAlign: 'center',
@@ -136,7 +132,7 @@ export const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'center',
     minHeight: '100vh',
-    paddingTop: theme.spacing(25),
+    paddingTop: theme.spacing(20),
   }, 
   paper: {
     marginTop: theme.spacing(25),
