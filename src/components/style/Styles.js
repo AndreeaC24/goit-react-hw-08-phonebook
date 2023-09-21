@@ -38,6 +38,7 @@ export const useStyles = makeStyles(theme => ({
     textDecoration: 'none',
     color: '#1B3668',
     fontSize: '18px',
+    padding: theme.spacing(3),
     '&:hover': {
       borderBottom: '1px solid #1B3668',
     },
@@ -50,7 +51,8 @@ export const useStyles = makeStyles(theme => ({
     margin: theme.spacing(2),
   },
   listItem: { 
-    textAlign: 'center', 
+    textAlign: 'center',
+     margin: theme.spacing(1), 
   },
   icon: {
     color: '#275DBA',
