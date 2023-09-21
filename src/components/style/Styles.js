@@ -77,12 +77,12 @@ export const useStyles = makeStyles(theme => ({
       minHeight: '50vh',
     },
   },
-  svgContainer: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-  },
+  // svgContainer: {
+  //   padding: theme.spacing(2),
+  //   textAlign: 'center',
+  // },
   formContainer: {
-    padding: theme.spacing(5),
+    padding: theme.spacing(3),
     textAlign: 'center',
     maxWidth: '100%',
     margin: '30px auto',
@@ -90,10 +90,12 @@ export const useStyles = makeStyles(theme => ({
       maxWidth: '100%', 
     },
   },
-  svg: {
-    marginTop: theme.spacing(20),
-    width: '350px',
-    height: '350px',
+  svgAnimation: {
+    marginTop: theme.spacing(5),     
+    width: '500px',
+    height: 'auto', 
+    transform: 'scale(0.8)',
+    transition: 'opacity 1s, transform 1s',
     [theme.breakpoints.down('sm')]: {
       width: '250px',
       height: '250px',
@@ -112,7 +114,9 @@ export const useStyles = makeStyles(theme => ({
     textStroke: '2px #fff',
     WebkitTextStroke: '1px #fff',
     background: `linear-gradient(to right, #1B3668, transparent), linear-gradient(to left, #1B3668, transparent), linear-gradient(to top, #1B3668, transparent), linear-gradient(to bottom, #1B3668, transparent)`,
-    backgroundBlendMode: 'multiply',
+    backgroundBlendMode: 'multiply',    
+    transform: 'translateY(20px)',
+    transition: 'opacity 1s, transform 1s',
   },
   otherText: {
     padding: theme.spacing(2),
@@ -122,7 +126,17 @@ export const useStyles = makeStyles(theme => ({
       fontSize: '20px',
       padding: theme.spacing(1),
     },
-    color: '#275DBA',
+    color: '#275DBA',     
+    // opacity: 0,
+    transform: 'translateY(20px)',
+    transition: 'opacity 1s, transform 1s',
+  }, 
+  containerAnimation: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    minHeight: '100vh',
+    paddingTop: theme.spacing(20), 
   }, 
   paper: {
     marginTop: theme.spacing(25),
@@ -278,7 +292,7 @@ export const useStyles = makeStyles(theme => ({
   }, 
   buttonNF:{
     marginTop: theme.spacing(2),
-  },
+  },   
 }));
 
 export const StyledBadge = styled(Badge)(({ theme }) => ({
