@@ -257,25 +257,6 @@ export const useStyles = makeStyles(theme => ({
   deleteButton: {
     marginTop: theme.spacing(2),
   },
-  modalComp: {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    backgroundColor: 'white',
-    textAlign: 'center',
-    border: '2px solid #ccc',
-    boxShadow: 24,
-    padding: theme.spacing(5),
-  },
-  modalClose: {
-    marginTop: theme.spacing(5),
-    marginLeft: theme.spacing(3),
-  },
-  modalText: {
-    marginTop: theme.spacing(5),
-  },
   addBox: {
     display: 'flex',
     alignItems: 'flex-end',
