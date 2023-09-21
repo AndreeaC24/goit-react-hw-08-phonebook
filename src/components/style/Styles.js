@@ -97,12 +97,11 @@ export const useStyles = makeStyles(theme => ({
     transform: 'scale(0.8)',
     transition: 'opacity 1s, transform 1s',
     [theme.breakpoints.down('sm')]: {
-      width: '250px',
-      height: '250px',
+      width: '300px', 
     },
   },
   welcomeText: {
-    padding: theme.spacing(5),
+    padding: theme.spacing(6),
     borderRadius: theme.shape.borderRadius,
     fontSize: '42px',
     [theme.breakpoints.down('sm')]: {
@@ -126,8 +125,7 @@ export const useStyles = makeStyles(theme => ({
       fontSize: '20px',
       padding: theme.spacing(1),
     },
-    color: '#275DBA',     
-    // opacity: 0,
+    color: '#275DBA',  
     transform: 'translateY(20px)',
     transition: 'opacity 1s, transform 1s',
   }, 
@@ -136,30 +134,23 @@ export const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'center',
     minHeight: '100vh',
-    paddingTop: theme.spacing(15),
+    paddingTop: theme.spacing(25),
   }, 
-  // paper: {
-  //   marginTop: theme.spacing(25),
-  //   display: 'flex',
-  //   flexDirection: 'column',
-  //   alignItems: 'center',
-  // },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.primary.dark,
-  },
-  form: {
+  paper: {
+    marginTop: theme.spacing(25),
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  }, 
+  form: { 
     width: '100%',
-    marginTop: theme.spacing(5),
+    marginTop: theme.spacing(4),
   },
-  submit: {
-    margin: theme.spacing(3, 0, 3),
+  submitBtn: { 
     backgroundColor: theme.palette.primary.dark,
     color: '#FFF',
-    padding: theme.spacing(2),
-    '&:hover, &:active, &:focus': {
-      backgroundColor: theme.palette.info.dark,
-    },
+    padding: theme.spacing(2), 
+    marginTop: theme.spacing(2),
   },
   labelMargin: {
     marginTop: '5px',
@@ -170,11 +161,19 @@ export const useStyles = makeStyles(theme => ({
   account: {
     display: 'flex',
     justifyContent: 'end',
+    marginTop: theme.spacing(2), 
+  },
+  linkBtn:{
+    color:'black',
+    textDecoration:'none',
+  },
+  title:{
+    marginTop: theme.spacing(2),
   },
   loginContainer: {
     border: '2px solid #ccc',
     borderRadius: '10px',
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(1),
     padding: theme.spacing(1),
   },
   userName: {
@@ -200,7 +199,7 @@ export const useStyles = makeStyles(theme => ({
     fontFamily: 'Cooper Black, sans-serif',
     color: '#275DBA',
     textAlign: 'center',
-    marginBottom: '20px',
+    marginBottom: theme.spacing(10),
   },
   myAgenda: {
     display: 'flex',
@@ -216,7 +215,7 @@ export const useStyles = makeStyles(theme => ({
   },
   contactIcon: {
     fontSize: '80px',
-    padding: theme.spacing(2),
+    padding: theme.spacing(3), 
     color: '#275DBA',
   },
   formGroup: {
@@ -289,6 +288,7 @@ export const useStyles = makeStyles(theme => ({
     top: '100%',
     left: 0,
     color: 'red',
+    fontSize:'12px',
   }, 
   buttonNF:{
     marginTop: theme.spacing(2),

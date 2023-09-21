@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Avatar, CssBaseline, Grid, Button, Container, TextField, Typography, Link } from '@mui/material';
-
+import { Link as RouterLink } from 'react-router-dom';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';  
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
@@ -44,8 +44,8 @@ const Login = () => {
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <div className={classes.paper}>
-          <Avatar className={classes.avatar}> <LockOutlinedIcon /> </Avatar>
-          <Typography component="h1" variant="h5"> Log in </Typography>
+          <Avatar sx={{ bgcolor: '#275DBA'}}> <LockOutlinedIcon /> </Avatar>
+          <Typography variant="h4" className={classes.title}> Log in </Typography>
           <form className={classes.form} onSubmit={handleSubmit} noValidate>
             <TextField
               variant="outlined"
@@ -98,12 +98,17 @@ const Login = () => {
               type="submit"
               fullWidth
               variant="contained"
-              className={classes.submit}
+              className={classes.submitBtn}
             > Sign In
             </Button>
             <Grid container className={classes.account}>
-              <Link href="/register" variant="body2"> {"Don't have an account? Sign Up"} </Link>
-            </Grid>
+                <RouterLink
+                  component={RouterLink}
+                  to="/register" 
+                  className={classes.linkBtn}> 
+                  {"Don't have an account? Sign Up"}
+                </RouterLink>
+              </Grid>
           </form>
         </div>
       </Container>

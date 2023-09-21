@@ -2,10 +2,6 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { Avatar, Badge, Stack, Button, useTheme, useMediaQuery } from '@mui/material';
-// import Badge from '@mui/material/Badge';
-// import Avatar from '@mui/material/Avatar';
-// import Stack from '@mui/material/Stack';
-// import Button from '@material-ui/core/Button';
 import { indigo } from '@mui/material/colors';
 import LogoutIcon from '@mui/icons-material/Logout';
 

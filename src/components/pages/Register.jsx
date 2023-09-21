@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Avatar, CssBaseline, Grid, Button, Container, TextField, Typography, Link } from '@mui/material';
- 
+import { Link as RouterLink } from 'react-router-dom'; 
 import AccountCircleIcon from '@mui/icons-material//AccountCircle'; 
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
@@ -18,7 +18,7 @@ const Register = () => {
   const [nameError, setNameError] = useState('');
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
-
+  
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.currentTarget;
@@ -43,8 +43,8 @@ const Register = () => {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
-        <Avatar className={classes.avatar}> <AccountCircleIcon /> </Avatar>
-        <Typography component="h1" variant="h5"> Sign Up </Typography>
+        <Avatar sx={{ bgcolor: '#275DBA'}}> <AccountCircleIcon /> </Avatar>
+        <Typography variant="h4" className={classes.title}> Sign Up </Typography>
         <form className={classes.form} onSubmit={handleSubmit} noValidate>
           <TextField
             variant="outlined"
@@ -114,12 +114,17 @@ const Register = () => {
             type="submit"
             fullWidth
             variant="contained"
-            className={classes.submit}
+            className={classes.submitBtn}
           > Sign up
           </Button>
           <Grid container className={classes.account}>
-            <Link href="/login" variant="body2"> {'Login'} </Link>
-          </Grid>
+              <RouterLink
+                component={RouterLink}
+                to="/login"
+                className={classes.linkBtn}> 
+               {"Login"}
+              </RouterLink>
+            </Grid> 
         </form>
       </div>
     </Container>

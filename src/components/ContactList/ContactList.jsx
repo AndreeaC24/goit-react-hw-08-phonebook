@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux'; 
 
-import { deepOrange } from '@mui/material/colors';
+import { pink } from '@mui/material/colors';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import EditNoteOutlinedIcon from '@mui/icons-material/EditNoteOutlined';
@@ -28,7 +28,7 @@ export const ContactList = () => {
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const filteredContacts = useSelector(selectFilteredContacts);
-  const secondary = deepOrange[500]; // eslint-disable-line no-unused-vars
+  const secondary = pink[500]; // eslint-disable-line no-unused-vars
 
 
   const [close, setClose] = useState(false);   // eslint-disable-line no-unused-vars
@@ -74,10 +74,7 @@ export const ContactList = () => {
             {filteredContacts.map(contact => (
               <TableRow key={contact.id}>
                 <TableCell>
-                  <Avatar
-                    sx={{
-                      bgcolor: '#275DBA',
-                    }}
+                  <Avatar sx={{ bgcolor: '#275DBA', }}
                   />
                 </TableCell>
                 <TableCell>

@@ -36,8 +36,7 @@ const Home = () => {
             </Typography>
             </Fade>
             <Fade in={animationComplete} timeout={1000}>
-            <Typography
-              variant="h4"
+            <Typography 
               gutterBottom
               className={`${classes.otherText} ${animationComplete ? classes.textAnimation : ''}`}
             >
