@@ -85,7 +85,7 @@ export const ContactList = () => {
                       onChange={(e) => setEditName(e.target.value)}
                       sx={{
                         "& input": {
-                          paddingLeft: '10px', 
+                          paddingLeft: '10px',  
                         },
                       }}
                     />

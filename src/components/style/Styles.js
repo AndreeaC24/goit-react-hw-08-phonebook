@@ -231,7 +231,7 @@ export const useStyles = makeStyles(theme => ({
   },
   tabelContact: {
     width: '100%',
-    maxWidth: 400,
+    maxWidth: 500,
     marginLeft: theme.spacing(8),
     paddingTop: theme.spacing(5), 
   }, 
