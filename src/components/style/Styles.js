@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import { styled } from '@mui/material/styles';
-import Badge from '@mui/material/Badge';
+import Badge from '@mui/material/Badge'; 
 
 export const useStyles = makeStyles(theme => ({ 
   navbar: {
@@ -136,14 +136,14 @@ export const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'center',
     minHeight: '100vh',
-    paddingTop: theme.spacing(20), 
+    paddingTop: theme.spacing(15),
   }, 
-  paper: {
-    marginTop: theme.spacing(25),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
+  // paper: {
+  //   marginTop: theme.spacing(25),
+  //   display: 'flex',
+  //   flexDirection: 'column',
+  //   alignItems: 'center',
+  // },
   avatar: {
     margin: theme.spacing(1),
     backgroundColor: theme.palette.primary.dark,

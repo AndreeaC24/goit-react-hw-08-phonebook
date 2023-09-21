@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-import { Drawer, IconButton, List, ListItem, ListItemText,} from '@material-ui/core'; 
+import { Drawer, IconButton, List, ListItem, ListItemText,} from '@mui/material';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 
 import { useStyles } from '../style/Styles';

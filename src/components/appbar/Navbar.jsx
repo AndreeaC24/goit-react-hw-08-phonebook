@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-import { AppBar, Toolbar, Typography, useTheme, useMediaQuery, CssBaseline,} from '@material-ui/core';
+import { AppBar, Toolbar, Typography, useTheme, useMediaQuery, CssBaseline,} from '@mui/material';
 import LoginIcon from '@mui/icons-material/Login';
 import HowToRegIcon from '@mui/icons-material/HowToReg';  
 

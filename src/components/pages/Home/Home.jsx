@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Grid, Typography, Fade } from '@material-ui/core';
+import { Grid, Typography, Fade } from '@mui/material';
 import imageSvg from './illustration.svg';
 
 import { useStyles } from '../../style/Styles';

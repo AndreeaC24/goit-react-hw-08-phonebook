@@ -1,15 +1,8 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-
-import Avatar from '@material-ui/core/Avatar';
-import Button from '@material-ui/core/Button';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import TextField from '@material-ui/core/TextField';
-import Link from '@material-ui/core/Link';
-import Grid from '@material-ui/core/Grid';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
+import { Avatar, CssBaseline, Grid, Button, Container, TextField, Typography, Link } from '@mui/material';
+ 
+import AccountCircleIcon from '@mui/icons-material//AccountCircle'; 
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
